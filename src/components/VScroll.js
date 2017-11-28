@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './HScroll.css'
+import './VScroll.css'
 
-export class HScroll extends Component {
+export class VScroll extends Component {
   constructor(props) {
     super(props);
 
@@ -216,9 +216,9 @@ export class HScroll extends Component {
   }
 }
 
-HScroll.propTypes = {
+VScroll.propTypes = {
   style: PropTypes.object,
   children: PropTypes.node,
 }
 
-export default HScroll;
+export default VScroll;
