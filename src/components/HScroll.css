@@ -1,0 +1,32 @@
+div.scroll-track {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  width: 7px;
+  border-radius: 10px;
+  user-select: none;
+  z-index: 5;
+  outline: none;
+}
+
+div.scroll-track-hover {
+  background: rgba(0, 0, 0, 0.15);
+  width: 10px;
+}
+
+div.scroll-track-hover div.scroll-gripper {
+  width: 7px;
+}
+
+div.scroll-gripper {
+  background-clip: content-box;
+  background-color: rgba(0, 0, 0, .4);
+  border: 1px solid rgba(85, 85, 85, .6);
+  border-radius: 7px;
+  position: absolute;
+  right: 0;
+  width: 5px;
+  transition: width 250ms;
+}
