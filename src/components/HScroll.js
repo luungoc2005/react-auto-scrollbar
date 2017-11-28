@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 import './HScroll.css'
 
 export class HScroll extends Component {
-  static propTypes = {
-    style: PropTypes.object,
-    children: PropTypes.node,
-  }
-
   constructor(props) {
     super(props);
 
@@ -219,6 +214,11 @@ export class HScroll extends Component {
       </div>
     );
   }
+}
+
+HScroll.propTypes = {
+  style: PropTypes.object,
+  children: PropTypes.node,
 }
 
 export default HScroll;

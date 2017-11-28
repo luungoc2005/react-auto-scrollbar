@@ -16,5 +16,7 @@ storiesOf('Button', module)
   .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
 
 storiesOf('HScroll', module)
-  .add('introduction', () => <HScroll>{_range(500).map((value) => 
-    <div key={value}>This is some scrollable content {value}</div>)}</HScroll>)
+  .add('50 lines', () => <HScroll>{_range(50).map((value) => 
+    <div key={value}>This is some scrollable content - line #{value + 1}</div>)}</HScroll>)
+  .add('250 lines', () => <HScroll>{_range(250).map((value) => 
+    <div key={value}>This is some scrollable content - line #{value + 1}</div>)}</HScroll>)
